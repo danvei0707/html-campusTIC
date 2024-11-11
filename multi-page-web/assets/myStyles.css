@@ -1,0 +1,82 @@
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #01013b;
+    color: gainsboro;
+}
+
+header, footer {
+    background-color: darkblue;
+    color: gainsboro;
+    height: 60px;
+    padding: 5px;
+}
+
+header > * {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+header a {
+    text-decoration: none;
+    color: #dadf79;
+}
+header a:hover {
+    color: gainsboro;
+}
+
+footer > div {
+    margin: 0 auto;
+    text-align: center;
+}
+
+header button {
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 40px;
+    margin: 20px;
+}
+
+main{
+    padding: 30px 50px;
+    padding-bottom: 100px;
+    margin: 0 auto;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    padding: 10px 20px;
+    background-color:#2c2cca;
+    color: gainsboro;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: #19198a;
+    cursor: pointer;
+}
+
+button.cancel {
+    background-color: #923c3c;
+}
+
+button.cancel:hover {
+    background-color: #880e0e;
+}
+
+input, select, textarea {
+    background-color: rgb(199, 200, 245);
+    border: #2c2cca;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+
+a {
+    color: gainsboro;
+}

@@ -1,0 +1,21 @@
+img {
+    height: 700px;
+    object-fit: cover;
+}
+
+#graph{
+    object-fit: contain;
+    background-color: blue;
+    height: 300px;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 900;
+    margin: 20px;
+}
+
+main {
+    width: 850px;
+    font-size: large;
+}

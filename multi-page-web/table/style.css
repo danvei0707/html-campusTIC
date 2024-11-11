@@ -1,0 +1,33 @@
+table, td, th {
+    border-bottom: 1px solid gainsboro;
+    border-collapse: collapse;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+th {
+    color: #dadf79;
+}
+
+table {
+    width: 100%;
+}
+
+caption h2 {
+    font-size: 100px;
+}
+
+tr {background-color: #0a0a49dc;}
+tr:nth-child(even) {background-color: #060629;}
+
+tr:hover {background-color:#22223a;}
+
+tr > td:nth-child(6) {
+    color: lightgreen;
+}
+
+tr:nth-child(4) > td:nth-child(6),
+tr:nth-child(6) > td:nth-child(6),
+tr:nth-child(7) > td:nth-child(6) {
+    color: red;
+}

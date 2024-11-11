@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form | CryptoGeek</title>
+    <!-- <link 
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    > -->
+    <link rel="stylesheet" href="../assets/reset.css">
+    <link rel="stylesheet" href="../assets/myStyles.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <a href="../info/index.html"><h1>WhatACrypto</h1></a>
+        <p>Your Guide to Easy, Accessible Crypto Knowledge.</p>
+    </header>
+    <h2>New transaction form</h2>
+    <a href="../table/index.html"><button>Go back to my portfolio</button></a>
+
+    
+
+    <form action="post">
+        <div class="form-fields">
+            <div class="name">
+                <label for="name">Coin Name:</label>
+                <input name="name" id="name" type="text" placeholder="Name">
+            </div>
+            <div class="symbol">
+                <label for="symbol">Coin symbol:</label>
+                <input name="symbol" id="symbol" type="text" placeholder="Symbol">
+            </div>
+        
+            <div class="number">
+                <label for="amount">Purchased amount:</label>
+                <input type="number" name="amount" id="amount" placeholder="00.000">
+            </div>
+            <div class="cost">
+                <label for="cost">Purchase cost:</label>
+                <input type="number" name="cost" id="cost" placeholder="00.00">
+            </div>
+
+            <div class="currencies">
+                <label for="currencies">Currency:</label>
+                <select name="currencies" id="currencies">
+                    <option value="dollar">$ - Dollar</option>
+                    <option value="euro">€ - Euro</option>
+                </select>
+            </div>
+            <div class="purchaseTime">
+                <label for="purchaseTime">Moment of the purchase:</label>
+                <input type="datetime-local" name="purchaseTime" id="purchaseTime">
+            </div>
+
+            
+            <div class="notification-settings">
+                <fieldset>
+                    <legend>Price Change Notifications</legend>
+                    
+                    <label for="priceChange">Notify me when price changes by:</label><br>
+                    <input type="radio" id="change1" name="priceChange" value="1%">
+                    <label for="change1">1%</label><br>
+                    <input type="radio" id="change5" name="priceChange" value="5%">
+                    <label for="change5">5%</label><br>
+                    <input type="radio" id="change10" name="priceChange" value="10%">
+                    <label for="change10">10%</label><br>
+                    <input type="radio" id="change25" name="priceChange" value="25%">
+                    <label for="change25">25%</label><br>
+                    <input type="radio" id="changeCustom" name="priceChange" value="1%">
+                    <label for="changeCustom">Custom</label><br>
+                    <input type="number" placeholder="00.00%" disabled>
+                </fieldset>
+        
+                <fieldset>
+                    <legend>Notification Frequency</legend>
+                    
+                    <label for="frequency">Notify me:</label><br>
+                    <input type="radio" id="instant" name="frequency" value="Instant">
+                    <label for="instant">Instantly</label><br>
+                    <input type="radio" id="daily" name="frequency" value="Daily">
+                    <label for="daily">Daily Summary</label><br>
+                    <input type="radio" id="weekly" name="frequency" value="Weekly" checked>
+                    <label for="weekly">Weekly Summary</label><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Notification Channels</legend>
+                    <label for="sms">SMS Notifications:</label>
+                    <input type="checkbox" id="sms" name="channel" value="sms"><br>
+                    <label for="push">Push Notifications:</label>
+                    <input type="checkbox" id="push" name="channel" value="push"><br>
+                    <label for="email">Email Notifications:</label>
+                    <input type="checkbox" id="email" name="channel" value="email" checked><br>
+                </fieldset>
+            </div>      
+            
+            <div class="notes">
+                <label for="notes">Notes or comments:</label>
+                <textarea name="notes" id="notes" placeholder="Your comments here..."></textarea>
+            </div>
+            <div class="color">
+                <label for="color">Item color:</label>
+                <input type="color" name="identifier" id="identifier">
+            </div>
+        </div>
+        
+        <div class="form-actions">
+            <button type="submit">Add transaction</button>
+            <button class="cancel" type="reset">Clear form</button>
+        </div>
+    </form>
+     
+</body>
+</html>
